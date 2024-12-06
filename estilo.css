@@ -1,0 +1,92 @@
+/* Estilo CSS para la página de la receta de patatas fritas */
+
+/* Fondo de la página con imagen */
+body {
+    font-family: 'Verdana', sans-serif; /* Tipografía moderna y legible */
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('Imagenes/Fondo\ página\ web.jpg') no-repeat center center fixed; /* Imagen de fondo con degradado */
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Color del texto */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrando el contenedor */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde del contenedor */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center; /* Centrado del texto */
+    color: #d35400; /* Color vibrante del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+    font-size: 2.5em; /* Tamaño del texto */
+    font-family: 'Trebuchet MS', sans-serif; /* Tipografía moderna */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+}
+
+/* Estilo de los subtítulos */
+h2 {
+    text-align: center; /* Centrado del texto */
+    color: #2980b9; /* Color vibrante del texto */
+    margin-top: 30px; /* Espacio superior */
+    font-size: 2em; /* Tamaño del texto */
+    font-family: 'Trebuchet MS', sans-serif; /* Tipografía moderna */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+    position: relative; /* Necesario para la pseudo-clase after */
+}
+
+/* Línea sutil debajo de los subtítulos */
+h2::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px auto;
+}
+
+/* Estilo de las listas desordenadas y ordenadas */
+ul, ol {
+    margin-left: 40px; /* Sangría izquierda */
+    font-size: 1.1em; /* Tamaño del texto */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilo de los elementos de las listas */
+ul li, ol li {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilo de la imagen */
+img {
+    display: block; /* Centrado en el contenedor */
+    margin: 20px auto; /* Margen superior e inferior */
+    border: 5px solid #ddd; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Estilo para botones */
+button {
+    display: block; /* Alineación del botón */
+    margin: 20px auto; /* Centrando el botón */
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #d35400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+}
+
+button:hover {
+    background-color: #e67e22; /* Color del botón al pasar el ratón */
+}
